@@ -15,6 +15,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 public class MySpringBatchApplication
 {
+	
+	
     @Autowired
     JobLauncher jobLauncher;
       
