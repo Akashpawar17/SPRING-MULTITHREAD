@@ -31,7 +31,7 @@ public class EmployeeController {
 	private Job job;
 	
 	
-  @Scheduled(fixedRate = 5000)
+  @Scheduled(cron ="*/15 * * * * *")
 	public BatchStatus load() throws JobExecutionAlreadyRunningException, JobRestartException, JobInstanceAlreadyCompleteException, JobParametersInvalidException {
 		Map<String, JobParameter> maps=new HashMap<>();
 		maps.put("time", new JobParameter(System.currentTimeMillis()));
