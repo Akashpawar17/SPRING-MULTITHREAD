@@ -26,6 +26,8 @@ public class MyScheduler {
 	@Autowired
 	private Job job;
 	
+	
+	
 	@Scheduled(cron ="*/15 * * * * *")
 	public void myScheduler() throws JobExecutionAlreadyRunningException, JobRestartException, JobInstanceAlreadyCompleteException, JobParametersInvalidException{
 JobParameters jobParameters = new JobParametersBuilder().addLong("time", System.currentTimeMillis()).toJobParameters();

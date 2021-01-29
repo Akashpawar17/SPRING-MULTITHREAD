@@ -40,8 +40,6 @@ public class BatchConfig {
 
 	@Autowired
 	private StepBuilderFactory stepBuilderFactory;
-
-	
 	
 	@Autowired
 	private DataSource dataSource;
