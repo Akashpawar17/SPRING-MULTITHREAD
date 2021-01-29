@@ -8,6 +8,11 @@ public class SpringBatchCsvDbApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBatchCsvDbApplication.class, args);
+		
+		
+		
+		
+		
 	}
 
 	
