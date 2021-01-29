@@ -22,11 +22,8 @@ public class MyScheduler {
 
 	@Autowired
 	private JobLauncher jobLauncher;
-	
 	@Autowired
 	private Job job;
-	
-	
 	
 	@Scheduled(cron ="*/15 * * * * *")
 	public void myScheduler() throws JobExecutionAlreadyRunningException, JobRestartException, JobInstanceAlreadyCompleteException, JobParametersInvalidException{
